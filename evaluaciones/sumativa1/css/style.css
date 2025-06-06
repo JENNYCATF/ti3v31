@@ -1,0 +1,149 @@
+/* Paleta: verde bosque, marrón claro, blanco, beige */
+
+:root {
+  --verde: #4CAF50;
+  --marron: #8D6E63;
+  --beige: #F5F5DC;
+  --blanco: #ffffff;
+  --gris: #444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: var(--blanco);
+  color: var(--gris);
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--beige);
+}
+
+.eslogan {
+  font-style: italic;
+  color: var(--marron);
+}
+
+.imagen-principal img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin: 1rem 0;
+  border-radius: 12px;
+}
+
+.talleres {
+  padding: 2rem 1rem;
+}
+
+.talleres h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--verde);
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.tarjeta {
+  background-color: var(--beige);
+  padding: 1rem;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contacto {
+  background-color: var(--verde);
+  color: var(--blanco);
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+input, select, button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+}
+
+button {
+  background-color: var(--marron);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #5D4037;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-color: var(--beige);
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+h1, h2 {
+    font-family: 'Montserrat';
+    color:#2222FF;
+    border: 1cm;
+    border-color: #000000;
+    border-radius: 2cm;
+}
+
+img {
+    align-self: right;
+}
+
+p, li {
+    font-family: 'Roboto';
+    color:#009900;
+}
+
+body {
+    background: #DDDDDD;
+}
