@@ -47,12 +47,46 @@
           <label for="nombres">Nombres:</label>
           <input type="text" id="nombres" name="nombres" required>
         </div>
-        
-      </form>
-    </section>
 
+        <div>
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" required>
+        </div>
 
-  </main>
+        <div>
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+        </div>
 
+        <div>
+      <label for="rut">RUT:</label>
+      <input type="text" id="rut" name="rut" placeholder="12345678-9" required>
+        </div>
+
+        </div>
+      <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+      <input type="text" id="fechaNacimiento" name="fechaNacimiento" placeholder="dd/mm/aaaa" required>
+        </div>
+
+      <div>
+      <label for="taller">Taller de Interés:</label>
+      <select id="taller" name="taller" required>
+        <option value="">-- Selecciona un taller --</option>
+        <option value="teatro">Teatro Comunitario</option>
+        <option value="danza">Danza Urbana</option>
+        <option value="musica">Música Urbana</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="observaciones">Observaciones:</label>
+      <textarea id="observaciones" name="observaciones" rows="4" placeholder="Opcional"></textarea>
+    </div>
+
+    <div>
+      <button type="submit">Enviar Formulario</button>
+    </div>
+  </form>
+</section>
 </body>
 </html>
